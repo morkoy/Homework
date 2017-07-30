@@ -11,6 +11,7 @@ body {
     background-color: #f9f9f9;
     line-height: 1.5; /*УТОЧНИТЬ!!!*/
 }
+
 .container {
     width: 1069px;
     min-height: 900px; /*УТОЧНИТЬ ПОСЛЕ ВЕРСТКИ! задаем минимальную высоту содержимого страницы*/
@@ -21,15 +22,22 @@ body {
     -webkit-box-shadow: 0 5px 5px rgba(0,0,0,.3);
     box-shadow: 0 5px 5px rgba(0,0,0,.3);
 }
+a {
+    text-decoration: none;
+}
+.sidebar a:hover {
+    color: #2c2c2c;
+}
+ul li:hover {
+    cursor: pointer;
+}
 .up_menu{
-    /*width: 966px;*/
     height: 40px;
     margin: 32px 0 40px;
     background-color: #fff;
     color: #fff;
     font-family: "OpenSans", sans-serif;
     text-shadow: 0 1px 1px rgba(0,0,0,.5);
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDk2NiA0MCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjUwJSIgeTE9IjEwMCUiIHgyPSI1MCUiIHkyPSItMS40MjEwODU0NzE1MjAyZS0xNCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNDM0MzQzIiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNWU1ZTVlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgPC9saW5lYXJHcmFkaWVudD4KCjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI5NjYiIGhlaWdodD0iNDAiIGZpbGw9InVybCgjaGF0MCkiIC8+Cjwvc3ZnPg==);
     background-image: -moz-linear-gradient(bottom, #434343 0%, #5e5e5e 100%);
     background-image: -o-linear-gradient(bottom, #434343 0%, #5e5e5e 100%);
     background-image: -webkit-linear-gradient(bottom, #434343 0%, #5e5e5e 100%);
@@ -44,16 +52,17 @@ body {
     border-right: 1px solid transparent;
 }
 .up_menu ul li:hover {
-    cursor: pointer;
     height: 40px;
     border-right: 1px solid #838383;
     border-left: 1px solid #838383;
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCA0MCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjUwJSIgeTE9IjEwMCUiIHgyPSI1MCUiIHkyPSItMS40MjEwODU0NzE1MjAyZS0xNCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMmUyZTJlIiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNGE0YTRhIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgPC9saW5lYXJHcmFkaWVudD4KCjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNDAiIGZpbGw9InVybCgjaGF0MCkiIC8+Cjwvc3ZnPg==); /* gradient overlay */
     background-image: -moz-linear-gradient(bottom, #2e2e2e 0%, #4a4a4a 100%); /* gradient overlay */
     background-image: -o-linear-gradient(bottom, #2e2e2e 0%, #4a4a4a 100%); /* gradient overlay */
     background-image: -webkit-linear-gradient(bottom, #2e2e2e 0%, #4a4a4a 100%); /* gradient overlay */
     background-image: linear-gradient(bottom, #2e2e2e 0%, #4a4a4a 100%); /* gradient overlay */
 
+}
+.up_menu a {
+    color: #fff;
 }
 .sidebar {
     width: 240px;
@@ -69,12 +78,13 @@ body {
     border: 1px solid #c8c8c8; /* stroke */
     border-bottom: none;
 }
+.sidebar a {
+    color: #656363;
+}
 .sidebar ul li:hover {
-    cursor: pointer;
     width: 240px;
     height: 36px;
     background-color: #f9f9f9;
-    font-weight: bold;
     padding-left: 35px;
 }
 .sidebar .br_bottom {
@@ -125,10 +135,12 @@ body {
 
 }
 .footer ul li.menu:hover {
-    cursor: pointer;
     text-decoration: underline; /*подчеркиваем элементы меню футера*/
 
 }
 .footer ul li.copyright {
     float: right;
+}
+.footer a {
+    color: #2c2c2c;
 }
