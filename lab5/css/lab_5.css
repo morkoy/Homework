@@ -1,0 +1,190 @@
+@import "reset.css";
+
+* {
+    box-sizing: border-box;
+}
+
+.background {
+    width: 100%;
+    min-height: 100%;
+    background-image: url("../img/background_footer_cut_full.jpg");
+}
+
+.background_white {
+    width: 1018px;
+    height: 991px;
+    background-image: url("../img/white_main.png");
+    margin: 0 auto;
+}
+.container {
+    margin-left: 9px;
+}
+header {
+    width: 1000px;
+    height: 164px;
+}
+.left_header {
+    width: 283px;
+    height: 164px;
+    margin: 0 0 0 30px;
+    float: left;
+}
+.right_header {
+    width: 400px;
+    float: right;
+    padding-right: 33px;
+}
+
+.contacts{
+    margin-top: 10px;
+    opacity: .8; /* layer alpha */
+    color: #1289a7; /* text color */
+    font-family: "Tahoma", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    float: right;
+}
+.our_contacts {
+    text-shadow: 0 1px 0 rgba(0, 145, 255, 0.75);
+}
+.countries {
+    margin-top: 10px;
+    float: right;
+}
+.countries ul li {
+    display: inline-block;
+    text-align: center;
+    font-family: "Tahoma", sans-serif;
+    font-size: 10px;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+.countries a {
+    color: #1289a7;
+}
+.photo {
+    width: 1000px;
+    height: 239px;
+    border-top: 1px solid #128aa7;
+    border-bottom: 1px solid #128aa7;
+
+}
+.menu {
+    width: 1000px;
+    height: 34px;
+    font-family: "Tahoma", sans-serif;
+    background-image: linear-gradient(to top, #373737, #303030);
+    border-top: 1px solid #cacbcb;
+    border-bottom: 1px solid #000;
+    -webkit-box-shadow: 0 3px 4px 0 rgba(50, 50, 50, 0.62);
+    -moz-box-shadow:    0 3px 4px 0 rgba(50, 50, 50, 0.62);
+    box-shadow:         0 3px 4px 0 rgba(50, 50, 50, 0.62);
+    font-size: 0; /*предотвращение коллапса*/
+    z-index: 100;
+    position: relative;
+}
+.menu li {
+    display: inline-block;
+    float: left;
+    position: relative;
+    max-width: 100%;
+    padding: 9px 0;
+    margin-left: 61px;
+    border-left: 1px solid transparent; /*чтобы не прыгали элементы меню - создание прозрачных границ, в при наведении ховер их подкрашивает - меню не прыгает*/
+    border-right: 1px solid transparent;
+}
+.fa {
+    padding-left: 6px;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 14px;/*задаем размер шрифта после предотвращения коллапса*/
+    color: #fff; /* text color */
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 145px;
+    top: 33px;
+    left: -10px; /*смещение влево выпадающего меню*/
+    background-color: #2f2f2f;
+    -webkit-box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0 5px 5px 0 rgba(50, 50, 50, 0.75);
+    box-shadow:         0 5px 5px 0 rgba(50, 50, 50, 0.75);
+}
+ul.submenu > li {
+    display: block;
+    margin-left: 0;
+    padding: 9px;
+}
+ul.submenu > li > a {
+    display: block;
+}
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+.content {
+    width: 1000px;
+    overflow: hidden;
+    z-index: 10;
+    position: absolute;
+}
+.left_column {
+    width: 209px;
+    float: left;
+    background: #edeef0;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+}
+.right_column {
+    width: 209px;
+    float: right;
+    background: #edeef0;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+}
+h2 {
+    margin: 5px auto;
+    color: #414b43;
+    font-family: "Tahoma", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(50, 50, 50, 0.75);
+}
+.left_column p {
+    color: #414b43;
+    font-family: "Tahoma", sans-serif;
+    font-size: 14px;
+    padding-left: 15px;
+    line-height: 1.8;
+}
+.central_column {
+    width: 582px;
+    margin: 0 auto;
+}
+.right_column p {
+    color: #414b43;
+    font-family: "Tahoma", sans-serif;
+    font-size: 14px;
+    padding-left: 15px;
+    line-height: 1.8;
+
+}
+footer {
+    width: 100%;
+    height: 31px;
+    margin: 0 auto;
+    padding: 8px 0;
+    text-align: center;
+    color: #fff;
+    font-family: "Tahoma", sans-serif;
+    font-size: 14px;
+    background: #0c739f;
+}

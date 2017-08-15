@@ -1,0 +1,90 @@
+@import "reset.css";
+
+* {
+    box-sizing: border-box;
+}
+.background_container {
+    background: #000;
+}
+.content  {
+    width: 960px;
+    height: 883px;
+    margin: 0 auto;
+    background-image: url("../img/background.jpg");
+    background-size: 100%;
+    padding: 0 70px;
+    position: relative;
+    min-height: 100%;
+
+}
+
+.logo {
+    width: 265px;
+    height: 150px;
+    background: url("../img/palm tree.png") right no-repeat;
+    float: left;
+}
+.img_logo {
+    padding-top: 78px;
+}
+.text_logo {
+    color: #e5e5e5; /* text color */
+    font-family: "Tahoma";
+    font-size: 12px;
+    text-align: center;
+}
+.contacts {
+    width: 800px;
+    height: 150px;
+    color: #e5e5e5;
+    font-family: "Tahoma";
+    font-size: 12px;
+    text-align: left;
+    padding-top: 96px;
+
+}
+.position_contacts {
+    float: right;
+}
+.contacts_text {
+    font-size: 10px;
+}
+.main_content {
+    float: left;
+
+}
+.country {
+    width: 256px;
+    height: 240px;
+    margin-right: 14px;
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+.country:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -webkit-transition-duration: 550ms;
+    -moz-transition-duration: 550ms;
+}
+.country_name {
+    color: #e5e5e5; /* text color */
+    font-family: "Tahoma";
+    font-size: 18px;
+    text-align: center;
+
+}
+footer {
+    position: absolute;
+    text-align: center;
+    color: #e5e5e5; /* text color */
+    font-family: "Tahoma";
+    font-size: 12px;
+    height: 80px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
